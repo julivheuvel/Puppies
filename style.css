@@ -1,0 +1,160 @@
+/* First Thing is Resets */
+/* Standard Resets */
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* class uses . */
+/* id uses # */
+
+/* ******************** */
+/* NAVBAR */
+/* ******************** */
+.navbar {
+    /* background-color: aquamarine; */
+    height: 75px;
+    /* border: black 1px dashed; */
+    background-color: aquamarine;
+}
+
+.nav-background {
+    /* border: red 1px dashed; */
+
+    /* width & height percentage are in reference to the container it is within */
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-profile{
+    /* border: red 1px dashed; */
+}
+.nav-links {
+    display: flex;
+    /* border: red 1px dashed; */
+    gap: 25px;
+    align-items: center;
+}
+
+/* from my class of nav-links I want (>) the ul element */
+.nav-links > ul {
+    display: flex;
+    
+    /* affects the spacing between child elements */
+    gap: 25px;
+}
+li {
+    /* gets rid of the dots from a li element */
+    list-style: none;
+}
+a {
+    /* font color */
+    color: black;
+    /* gets rid of underline on a link */
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* ******************** */
+/* MAIN */
+/* ******************** */
+
+.main {
+
+    /* vh = view height */
+    height: 92.1vh;
+
+    /* vw = view width */
+    width: 100vw;
+    background-color: gray;
+    
+    /* border: red 1px dashed; */
+}
+
+.main-background {
+    display: flex;
+    justify-content: center;
+
+    /* gap = space between info & connections */
+    gap: 30px;
+    /* padding: 20px; */
+    width: 70%;
+    margin: 0 auto;
+
+    /* border: red 1px dashed; */
+}
+
+/* ******************** */
+/* INFO */
+/* ******************** */
+.info {
+    height: 80vh;
+    /* width: 50%; */
+    flex: 2;
+    /* background-color: whitesmoke; */
+    margin-top: 60px;
+
+    /* border: red 1px dashed; */
+
+}
+
+.profile {
+    height: 400px;
+    width: 100%;
+    background-color: whitesmoke;
+
+    /* to space out profile from hobbies */
+    margin-bottom: 30px;
+}
+.dog-profile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+
+    border: 1px red dashed;
+}
+
+.hobbies {
+    height: 200px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+/* ******************** */
+/*  CONNECTIONS*/
+/* ******************** */
+.connections {
+    height: 80vh;
+    /* width: 30%; */
+    flex: 1;
+    /* background-color: whitesmoke; */
+    margin-top: 60px;
+
+    /* border: red 1px dashed; */
+}
+
+.incoming-friends {
+    height: 200px;
+    width: 100%;
+
+    /* to space out incoming-friends and friends */
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+
+.friends {
+    height: 400px;
+    width: 100%;
+    background-color: whitesmoke;
+}
